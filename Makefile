@@ -41,4 +41,4 @@ sync:
 
 ### RELEASE COMMANDS
 release:
-	make prepare && docker build -t docker-react:build . -f ./.docker/dockerfile.deployment --rm && docker save docker-react:build -o ./build/docker-react.image.tar
+	make prepare && docker build -t portfolio:build . -f ./.docker/dockerfile.deployment --rm && docker save portfolio:build -o ./build/portfolio.image.tar
