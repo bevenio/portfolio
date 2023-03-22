@@ -1,0 +1,12 @@
+# Standard files and dirs
+node_modules
+dist
+.temp
+build
+.authorization
+
+# Generated files and dirs
+project.json
+.docker/docker-compose.development.yml
+.docker/docker-compose.production.yml
+.docker/docker-compose.deployment.yml
