@@ -1,9 +1,8 @@
-import { createStore, applyMiddleware, Dispatch } from 'redux'
+import { applyMiddleware, createStore, Dispatch } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
 import { applyReduxExtensionDevtools } from '@/services/devtool-service'
 import { actions, rootReducer } from '@/store/entries'
-
 import { storePersist } from '@/store/utility/store-persist-utility.module'
 import { storeShare } from '@/store/utility/store-share-utility.module'
 
@@ -24,4 +23,4 @@ declare global {
 storePersist.extendStore(store)
 storeShare.extendStore(store)
 
-export { store, actions }
+export { actions, store }

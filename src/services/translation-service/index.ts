@@ -1,10 +1,9 @@
 import { get } from 'dot-prop'
 
-/* Store */
-import { store, actions } from '@/store/store'
-
 /* Services */
 import { LoggingService } from '@/services/logging-service'
+/* Store */
+import { actions, store } from '@/store/store'
 
 type LanguageCode = string
 type Translation = string | undefined

@@ -14,3 +14,10 @@
 .app-content-wrapper-with-navbar {
   margin-top: var(--default-navbar-height);
 }
+
+.app-content-wrapper-inner-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}

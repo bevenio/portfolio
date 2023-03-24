@@ -20,17 +20,22 @@
       }
     }
   },
-  "extends": ["airbnb", "prettier", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
-  "plugins": ["prettier", "react", "import", "@typescript-eslint"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react", "import", "simple-import-sort", "prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "import/extensions": "off",
-    "react/prop-types": 0,
-    "import/no-extraneous-dependencies": [
+    "no-underscore-dangle": "off",
+    "no-shadow": "off",
+    "func-names": "off",
+    "semi": ["error", "never"],
+    "lines-between-class-members": [
       "error",
-      {
-        "devDependencies": ["src/**/*.spec.jsx", "**/*.script.jsx"]
-      }
+      "always",
+      { "exceptAfterSingleLine": true }
     ],
     "no-restricted-syntax": [
       "error",
@@ -39,18 +44,25 @@
         "message": "Prefer named exports"
       }
     ],
+    "class-methods-use-this": "off",
+    "import/extensions": "off",
+    "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["src/**/*.spec.jsx", "**/*.script.jsx"]
+      }
+    ],
+    "react/prop-types": 0,
+    "react/no-unknown-property": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
-    "no-underscore-dangle": "off",
     "react/destructuring-assignment": "off",
-    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-    "class-methods-use-this": "off",
-    "import/prefer-default-export": "off",
-    "func-names": "off",
     "react/react-in-jsx-scope": "off",
-    "no-shadow": "off",
-    "import/no-cycle": "off",
     "@typescript-eslint/no-shadow": ["error"],
-    "@typescript-eslint/no-empty-function": "off"
+    "@typescript-eslint/no-empty-function": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
   }
 }

@@ -1,0 +1,74 @@
+.app-design-banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-design-banner > * {
+  margin: calc(var(--default-margin) * 3);
+  user-select: none;
+}
+
+.app-design-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: plairfair;
+  white-space: nowrap
+}
+
+.app-swiss-stones {
+  width: 30vw;
+  display: flex;
+  position: relative;
+}
+
+.app-swiss-stones > img{
+  width: 100%;
+}
+
+.app-swiss-stones-text {
+  color: #FFFFFF;
+  font-size: 6vw;
+}
+
+.app-swiss-underlined-text {
+  width: 40vw;
+  position: relative;
+}
+
+.app-swiss-underlined-text  > img {
+  width: 100%;
+  transform: translate(0%, 140%);
+}
+
+.app-swiss-underlined-text-text {
+  color: #000000;
+  font-size: 6vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .app-design-banner {
+    flex-direction: column;
+    margin: calc(var(--default-margin));
+  }
+
+  .app-swiss-stones {
+    width: 60vw;
+  }
+
+  .app-swiss-stones-text {
+    font-size: 12vw;
+  }
+
+  .app-swiss-underlined-text-text {
+    font-size: 12vw;
+  }
+
+  .app-swiss-underlined-text {
+    width: 80vw;
+  }
+}

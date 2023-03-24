@@ -1,6 +1,6 @@
 import { constants } from '@/store/entries/auth/constants.module'
-import { api } from '@/store/utility/rest-api.module'
 import type { Payload } from '@/store/entries/auth/types'
+import { api } from '@/store/utility/rest-api.module'
 
 const responseLoginSuccess = (payload: Payload) => ({
   type: constants.LOGIN_RESPONSE_SUCCESS,

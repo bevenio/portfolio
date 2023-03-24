@@ -8,4 +8,4 @@ const constants = extendConstants(key, {
   LOGIN_RESPONSE_FAILED: 'LOGIN_RESPONSE_FAILED',
 })
 
-export { key, constants }
+export { constants, key }

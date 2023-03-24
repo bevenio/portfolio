@@ -1,6 +1,6 @@
 import { constants } from '@/store/entries/auth/constants.module'
 import { preset } from '@/store/entries/auth/state.module'
-import type { State, Payload } from '@/store/entries/auth/types'
+import type { Payload, State } from '@/store/entries/auth/types'
 
 const requestLogin = (state: State): State => ({
   ...state,

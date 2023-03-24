@@ -38,4 +38,4 @@ const applyFastRefresh = (filePath: string): void => {
   }
 }
 
-export { isDevMode, applyReduxExtensionDevtools, applyFastRefresh }
+export { applyFastRefresh, applyReduxExtensionDevtools, isDevMode }

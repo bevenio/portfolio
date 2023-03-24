@@ -1,11 +1,11 @@
 :root {
   /* Default color scheme*/
-  color-scheme: dark;
+  color-scheme: light;
 
   /* General color variables */
-  --hsl-color-brand: 225, 100%, 50%;
-  --hsl-color-accent: 230, 60%, 50%;
-  --hsl-color-error: 0, 100%, 50%;
+  --hsl-color-brand: 177, 43%, 89%;
+  --hsl-color-accent: 222, 97%, 57%;
+  --hsl-color-error: 340, 97%, 57%;
 
   /* General opacity variables */
   --alpha-light: 0.5;
@@ -29,7 +29,7 @@
 
 /* Color schemes */
 [color-scheme='light'] {
-  --color-mono-1: #d5d5d5;
+  --color-mono-1: #ffffff;
   --color-mono-2: #d8d8d8;
   --color-mono-3: #636363;
   --color-mono-translucent: #63636320;
@@ -43,5 +43,5 @@
   --color-mono-3: #e2e2e2;
   --color-mono-translucent: #e2e2e220;
   --color-mono-translucent-2: #e2e2e240;
-  --color-text: #d6d6d6;
+  --color-text: #000000;
 }
