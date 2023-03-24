@@ -12,6 +12,7 @@
   height: 100%;
   z-index: -1;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .app-navigation-bar-inner {

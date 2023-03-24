@@ -1,0 +1,14 @@
+.app-profile-picture {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  user-select: none;
+}
+
+.app-profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 5px solid white;
+  box-sizing: border-box;
+}

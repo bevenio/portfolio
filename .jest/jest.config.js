@@ -1,6 +1,6 @@
 module.exports = {
   rootDir: '../',
-  collectCoverageFrom: ['<rootDir>/**/*.js?(x)', '<rootDir>/**/*.ts?(x)', '!**/node_modules/**', '!**/vendor/**'],
+  collectCoverageFrom: ['<rootDir>/**/*.(t|j)s?(x)', '!**/node_modules/**', '!**/vendor/**'],
   coverageDirectory: '<rootDir>/.temp/jest_coverage',
   coverageReporters: ['json-summary'],
   moduleNameMapper: {
@@ -11,7 +11,7 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.js'],
   roots: ['<rootDir>/src'],
   testEnvironment: 'node',
-  testMatch: ['**/*.spec.js?(x)', '**/*.spec.ts?(x)'],
+  testMatch: ['**/*.spec.(t|j)s?(x)'],
   cacheDirectory: '<rootDir>/.temp/jest_cache',
   transform: {
     '\\.[jt]sx?$': 'babel-jest',
