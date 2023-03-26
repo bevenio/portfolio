@@ -2,7 +2,7 @@ import './button.scss'
 
 interface Props {
   children: React.ReactNode
-  onClick?: () => void
+  onClick?: React.MouseEventHandler<HTMLElement>
 }
 
 export const Button: React.FC<Props> = ({ children, onClick }: Props) => {

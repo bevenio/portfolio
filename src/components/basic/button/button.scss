@@ -2,3 +2,19 @@ button:hover {
   color: var(--color-text) !important;
   background-color: var(--color-mono-1) !important;
 }
+
+[type=submit], button {
+  display: inline-flex;
+  justify-content: center;
+  max-width: 100%;
+  line-height: 1.2;
+  padding: .6em .6em;
+}
+
+[type=submit], button::before,
+[type=submit], button::after {
+  content: '';
+  display: inline-block;
+  width: 2em;
+  flex-basis: 2em;
+}
